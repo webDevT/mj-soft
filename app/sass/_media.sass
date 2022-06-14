@@ -1,6 +1,10 @@
 @import "vars"
 
 /*==========  Desktop First  ==========*/
+@media only screen and (max-width : 1550px)
+	.blog__title 
+		font-size: 5vw
+
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1400px)
@@ -12,6 +16,13 @@
 	/**/
 	.h2 
 		font-size: 35px
+	.blog__title 
+		font-size: 4.7vw
+	.project-item__content
+		padding-left: 20px
+	.project-item p
+		width: 320px
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
@@ -22,7 +33,74 @@
 		margin-right: 20px
 	.logo  
 		margin-right: 20px
-		
+	.main-screen__img
+		margin-top: 44px
+		width: 100%
+	.blog__title
+		font-size: 4.8vw
+	.popular
+		.col-lg-4 
+			display: none
+		.col-lg-4:first-child,
+		.col-lg-4:nth-child(2)
+			display: block
+	.h2.right 
+		text-align: center
+	.project-items-wrapper
+		.col-lg-12:first-child
+			order: 1
+		.col-lg-12:nth-child(2)
+			order: 3
+		.col-lg-4
+			order: 2
+		.col-lg-8 
+			order: 4
+	.section-header 
+		margin-bottom: 0
+	.project-items-wrapper .col-lg-12 .h2.right
+		margin-top: 80px
+	.project-item 
+		flex-direction: column-reverse
+	.project-item__img
+		height: 215px
+		width: 100%
+		max-width: 100%
+		overflow: hidden
+		height: 57.333vw
+		img 
+			height: 100%
+			object-fit: cover
+			width: 100%
+	.project-item
+		background: transparent
+		height: auto
+		min-height: auto
+	.project-item__content 
+		padding-top: 24px 
+		padding-bottom: 26px
+		text-align: center
+		padding-left: 0 
+		padding-right: 0		
+		p
+			//max-width: 47.467vw
+			margin-left: auto
+			margin-right: auto
+			width: auto
+	.project-section
+		.h2 
+			text-align: center
+	.project-ilustration 
+		width: 238px
+	.project-items-wrapper--reverse
+		.h2 
+			margin-bottom: 0
+		.project-item
+			flex-direction: column
+		.project-ilustration
+			margin-bottom: 40px
+			width: 312px
+
+
 
 
 /* Small Devices, Tablets */
@@ -133,15 +211,80 @@
 	.items-section .item p.center
 		margin-top: 0
 		margin-bottom: 47px
+	.blog__title 
+		font-size: 61px
+		br 
+			display: none
+	.blog-column .h2 
+		margin-bottom: 45px
+	.popular
+		.col-lg-4:nth-child(2)
+			display: none
+	.popular 
+		padding-bottom: 100px
+	.contact
+		.col-md-4:first-child 
+			order: 1
+		.col-md-4:nth-child(2)
+			order: 3
+			display: flex
+			flex-direction: column-reverse
+		.col-md-4:nth-child(3)
+			order: 2
+	.submit-button 
+		margin-top: 9px
+		margin-bottom: 62px
+	.contact-img 
+		margin-bottom: 0
+	
+			
+	
+
+	
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
+	.blog-title__wrapper 
+		padding: 22px
+	.h2 
+		font-size: 28px
+	.blog-content__title 
+		font-size: 16px
+	.blog-item__content p 
+		font-size: 12.2px
+	.blog__link 
+		font-size: 14px
+	.blog-item__content 
+		padding: 26px
+	.blog-item__content p 
+		width: 178px
+		margin-left: auto
+		margin-right: auto
+	.items-section--article
+    	padding-bottom: 40px
+	.project-item__content 		
+		p
+			max-width: 178px
+			font-size: 12px
+	.h3 
+		font-size: 16px
+		margin-bottom: 10px
+	.project-item__link
+		font-size: 14px
+		margin-top: 10px
+	.project-section 
+		padding-bottom: 50px
+
+
 
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
+@media only screen and (max-width : 374px)
 	/**/
+	.blog__title 
+		font-size: 15vw
 
 
 /*==========  Mobile First  ==========*/

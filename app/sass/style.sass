@@ -48,6 +48,11 @@ body
         display: block
         transform: translateY(-60%)
         z-index: -1
+.h3 
+    color: $blue 
+    font-size: 32px
+    font-weight: 700 
+    margin-bottom: 15px
 p 
     line-height: 105%
     margin-bottom: 0
@@ -65,6 +70,8 @@ p
     color: #fff 
 .center 
     text-align: center
+.right 
+    text-align: right
 //end global style
 
 //start header style
@@ -236,6 +243,171 @@ p
     text-align: center
     padding: 60px 0
 //end footer style
+
+//start blog style
+.main-screen__img
+    max-width: 100%
+.blog-column
+    .h2 
+        margin-bottom: 70px
+    img 
+        max-width: 100%
+.blog-item
+    border: 1px solid #DDE5F4
+.blog-title__wrapper
+    padding: 30px 
+    background: rgba($blue, 0.3)
+.blog__title
+    font-size: 80px
+    font-weight: 700
+    line-height: 1
+    color: $blue
+    z-index: 1
+    position: relative
+    width: 400px 
+    max-width: 100%
+    .underline
+        position: relative
+        display: inline-block
+    .underline:after 
+        content: ''
+        position: absolute 
+        height: 15px 
+        width: 100% 
+        background: rgba(#fff, 0.5)
+        bottom: 0 
+        left: 0
+        display: block
+        transform: translateY(-20%)
+        z-index: -1
+.blog-item__content
+    padding: 30px 
+    text-align: center
+    p 
+        margin-bottom: 25px
+.blog-content__title
+    font-size: 20px 
+    color: $blue
+    font-weight: 700
+    margin-bottom: 15px
+.blog__link 
+    color: $blue 
+    text-decoration: underline
+    font-weight: 700
+    font-size: 18px
+.blog__link:hover 
+    color: $blue
+
+
+//end blog style
+
+.items-section--article
+    padding-bottom: 100px
+    .item
+        width: 405px
+        max-width: 100%
+.popular 
+    padding-bottom: 160px
+
+//start contact style 
+.label 
+    font-size: 18px 
+    color: #000 
+    margin-bottom: 15px 
+    display: block
+.input,
+.textarea 
+    width: 100% 
+    height: 60px 
+    border: 1px solid $stroke
+    padding: 0 21px
+    outline: none  
+    color: $black
+.textarea 
+    height: 289px
+    padding-top: 21px
+.input:focus::placeholder,
+.textarea:focus::placeholder  
+    color: transparent 
+.warning 
+    display: none
+.input-wrapper 
+    margin-bottom: 20px 
+    position: relative
+.input-wrapper.error 
+    .input 
+        border: 1px solid #CC4646
+        color: #CC4646
+    .warning 
+        font-size: 14px
+        color: #CC4646
+        padding-top: 10px
+        display: block
+.input-wrapper.right 
+    .input 
+        border-color: #71CC46
+.contact-img 
+    max-width: 100%
+    margin-bottom: 60px   
+    display: block 
+    margin-left: auto 
+    margin-right: auto 
+.submit-button
+    border: none 
+    width: 100%
+//end contact style
+
+//start projects style
+.section-header
+    width: 430px 
+    max-width: 100% 
+    margin-left: auto 
+    margin-right: auto
+    margin-bottom: 60px
+.project-items-wrapper
+    .h2 
+        margin-bottom: 30px
+.project-ilustration 
+    max-width: 100%
+    margin-left: auto 
+    margin-right: auto
+    display: block
+.project-item 
+    margin-bottom: 25px 
+    background: #DDE5F4
+    display: flex 
+    align-items: center 
+    justify-content: space-between
+    height: 300px
+    max-width: 100%
+    p 
+        width: 400px 
+        max-width: 100%
+.project-item__img
+    width: 449px 
+    height: 100%
+    max-width: 60%
+    img 
+        object-fit: cover
+        max-width: 100%
+        min-height: 100%
+.project-item__content
+
+    padding-left: 35px 
+    padding-right: 10px
+.project-item__link
+    font-size: 18px 
+    font-weight: 700
+    color: $blue
+    display: inline-block 
+    margin-top: 30px
+.project-item__link:hover 
+    color: $blue
+.project-items-wrapper--reverse
+    padding-top: 80px
+    .project-item
+        justify-content: flex-start
+//end projects style
 
 @import "media"
 
