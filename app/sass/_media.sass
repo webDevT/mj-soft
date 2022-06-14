@@ -1,0 +1,170 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1400px)
+	/**/
+	.h1 
+		font-size: 3.906vw
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+	.h2 
+		font-size: 35px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	.header 
+		font-size: 16px
+	.menu__link
+		margin-right: 20px
+	.logo  
+		margin-right: 20px
+		
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+	.menu 
+		display: none
+		position: absolute 
+		background: #fff 
+		top: 100% 
+		left: 0
+		width: 100%
+		z-index: 999
+		ul 
+			flex-direction: column
+			align-items: flex-start 
+			padding-left: 4.267vw 
+			padding-right: 4.267vw
+			padding-top: 20px
+			padding-bottom: 20px
+			border-bottom: 1px solid rgba(0, 0, 0, .1)
+	.menu-btn 
+		display: block 
+		cursor: pointer 
+	.menu-btn__row
+		width: 24px 
+		height: 2px 
+		background: $blue
+		margin-bottom: 6px
+		transition: all 0.3s
+	.menu-btn__row:last-child 
+		margin-bottom: 0
+	.logo 
+		margin-right: 0
+		position: absolute 
+		top: 50% 
+		left: 50% 
+		transform: translateX(-50%) translateY(-50%)
+	.header 
+		position: relative
+		padding: 23px 0
+	.menu-btn.active 
+		.menu-btn__row:last-child 
+			display: none
+		.menu-btn__row:nth-child(2)
+			transform: rotate(45deg)
+		.menu-btn__row:first-child
+			transform: rotate(-45deg)
+			margin-bottom: 0
+			position: relative
+			top: 2px
+	.menu__link 
+		margin-bottom: 15px
+		display: block
+	.slider-wrapper
+		position: static 
+		width: 100%
+		margin-left: 2.8vw
+
+
+			
+	.h1 
+		font-size: 38px
+	body 
+		font-size: 14px
+	.main-screen 
+		.row 
+			margin-bottom: 35px
+		.button 
+			margin-top: 25px 
+	.slider-item 
+		padding: 0 1.640vw
+	.slick-track 
+    	margin-left: -10vw
+	.main-screen
+		margin-top: 50px
+
+	.items-section 
+		.col-lg-4:first-child
+			order: 1
+		.col-lg-4:nth-child(2)
+			order: 2
+		.col-lg-4:nth-child(3)
+			order: 4
+		.col-lg-4:nth-child(4)
+			order: 3
+		.col-lg-4:nth-child(5)
+			order: 5
+		.col-lg-4:nth-child(6)
+			order: 6
+		.col-lg-4 
+			margin-bottom: 40px
+		.item--img
+			padding-bottom: 40px
+		.col-lg-4:last-child 
+			margin-bottom: 0
+			.item--img
+				padding-bottom: 0
+	.content 
+		padding-top: 80px
+		padding-bottom: 98px
+	.footer 
+		font-size: 14px 
+		padding: 40px 0
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
+
+
+
+
